@@ -780,9 +780,9 @@ class MuninPlugin:
         elif oper == 'autoconf':
             ret = self.autoconf()
             if ret:
-                print "yes"
+                print("yes")
             else:
-                print "no"
+                print("no")
             ret = True
         elif oper == 'suggest':
             ret = self.suggest()
