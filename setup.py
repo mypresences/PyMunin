@@ -73,7 +73,7 @@ class install(_install):
                     destination = os.path.join(munin_plugin_dir, name)
                     print("Installing %s to %s." % (name, munin_plugin_dir))
                     shutil.copy(source, destination)
-            except IOError, e:
+            except IOError as e:
                 if e.errno in  (errno.EACCES, errno.ENOENT):
                     # Access denied or file/directory not found.
                     print("*" * 78)
