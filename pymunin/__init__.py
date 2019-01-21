@@ -718,18 +718,18 @@ class MuninPlugin:
         for parent_name in self._graphNames:
             graph = self._graphDict[parent_name]
             if self.isMultigraph:
-                print "multigraph %s" % self._getMultigraphID(parent_name)
-            print self._formatConfig(graph.getConfig())
-            print
+                print("multigraph %s" % self._getMultigraphID(parent_name))
+            print(self._formatConfig(graph.getConfig()))
+            print()
         if (self.isMultigraph and self._nestedGraphs 
             and self._subgraphDict and self._subgraphNames):
             for (parent_name, subgraph_names) in self._subgraphNames.iteritems():
                 for graph_name in subgraph_names:
                     graph = self._subgraphDict[parent_name][graph_name]
-                    print "multigraph %s" % self.getMultigraphID(parent_name, 
-                                                                 graph_name)
-                    print self._formatConfig(graph.getConfig())
-                    print
+                    print("multigraph %s" % self.getMultigraphID(parent_name, 
+                                                                 graph_name))
+                    print(self._formatConfig(graph.getConfig()))
+                    print()
         return True
 
     def suggest(self):
@@ -759,10 +759,10 @@ class MuninPlugin:
             for (parent_name, subgraph_names) in self._subgraphNames.iteritems():
                 for graph_name in subgraph_names:
                     graph = self._subgraphDict[parent_name][graph_name]
-                    print "multigraph %s" % self.getMultigraphID(parent_name, 
-                                                                 graph_name)
-                    print self._formatVals(graph.getVals())
-                    print
+                    print("multigraph %s" % self.getMultigraphID(parent_name, 
+                                                                 graph_name))
+                    print(self._formatVals(graph.getVals()))
+                    print()
         return True
 
     def run(self):
