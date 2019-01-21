@@ -9,7 +9,7 @@
 import os.path
 import sys
 import re
-import cPickle as pickle
+import pickle
 
 __author__ = "Ali Onur Uyar"
 __copyright__ = "Copyright 2011, Ali Onur Uyar"
