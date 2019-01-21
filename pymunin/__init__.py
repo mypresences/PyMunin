@@ -751,9 +751,9 @@ class MuninPlugin:
         for parent_name in self._graphNames:
             graph = self._graphDict[parent_name]
             if self.isMultigraph:
-                print "multigraph %s" % self._getMultigraphID(parent_name)
-            print self._formatVals(graph.getVals())
-            print
+                print("multigraph %s" % self._getMultigraphID(parent_name))
+            print(self._formatVals(graph.getVals()))
+            print()
         if (self.isMultigraph and self._nestedGraphs 
             and self._subgraphDict and self._subgraphNames):
             for (parent_name, subgraph_names) in self._subgraphNames.iteritems():
