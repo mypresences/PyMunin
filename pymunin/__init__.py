@@ -963,7 +963,7 @@ def muninMain(pluginClass, argv=None, env=None, debug=False):
     except Exception:
         print >> sys.stderr, "ERROR: %s" % repr(sys.exc_info()[1])
         if autoconf:
-            print "no"
+            print("no")
         if debug:
             raise
         else:
